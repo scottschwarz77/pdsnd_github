@@ -25,7 +25,7 @@ class YesNoError(Exception):
 
 def load_data(city, month, day):
   """
-    Loads data for the specified city and filters by month and day if applicable.
+    Load data for the specified city and filters by month and day if applicable.
 
     Args:
         (str) city - name of the city to analyze
@@ -164,7 +164,7 @@ def display_data(df):
       return
     
 def time_stats(df):
-  """Displays statistics on the most common times of travel."""
+  """Display statistics on the most common times of travel."""
 
   print('\n1. Calculating time stats...\n')
   
@@ -205,7 +205,7 @@ def trip_duration_stats(df):
   print(df['Trip Duration'].mean())
 
 def user_stats(df, city):
-  """Displays statistics on bikeshare users."""
+  """Display statistics on bikeshare users."""
 
   print('\n4. Calculating user stats...\n')
 
