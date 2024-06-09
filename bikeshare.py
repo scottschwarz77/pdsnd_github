@@ -240,7 +240,8 @@ def main():
     user_stats(df, city)
 
     # Display individual rows
-    yes_no_input = get_yes_no_input("Would you like to see data for the first 5 rows? Type 'yes' or 'no': ")
+    yes_no_input = get_yes_no_input("Would you like to see data for the first 5 rows \
+                                    (or all rows if there less than 5)? Type 'yes' or 'no': ")
     if (yes_no_input == 'YES'):
       display_data(df)
     restart = get_yes_no_input("\nWould you like to restart? Enter 'yes' or 'no':")
