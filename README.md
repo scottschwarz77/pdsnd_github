@@ -1,4 +1,4 @@
-# Bikeshare Analytics
+# Bikeshare Statistics
 
 ## Date created
 
@@ -14,7 +14,7 @@ This program uses one Python file (bikeshare.py) and three data files: chicago.c
 
 ## Installation
 
-1. The Bikeshare Analytics program requires Python to be installed. Python can be downloaded [here](https://www.python.org/downloads/).
+1. The Bikeshare Statistics program requires Python to be installed. Python can be downloaded [here](https://www.python.org/downloads/).
 
 2. From the command line, clone the [bikeshare repo](https://github.com/scottschwarz77/pdsnd_github) from Github.
 
