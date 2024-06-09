@@ -129,8 +129,8 @@ def set_end_row(start_row, number_of_rows):
   Set the end row, for use by the display_data function.
   
   Args:
-  start_row: The starting row in the dataframe used in the display_data function.
-  number_of_rows: The number of rows in the dataframe used in the display_data function.
+  (int) start_row: The starting row in the dataframe used in the display_data function.
+  (int) number_of_rows: The number of rows in the dataframe used in the display_data function.
   """
    
   end_row = start_row + 4
@@ -142,7 +142,7 @@ def display_data(df):
   """Display five rows of data at a time.
 
   Args:
-  df: The dataframe containing the data to display
+  (dataframe) df: The dataframe containing the data to display
   """
   number_of_rows = len(df)
   start_row = 0
