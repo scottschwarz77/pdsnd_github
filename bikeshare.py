@@ -134,8 +134,8 @@ def set_end_row(start_row, number_of_rows):
   """
    
   end_row = start_row + 4
-  if end_row > number_of_rows-1:
-      end_row = number_of_rows-1
+  if end_row > number_of_rows - 1:
+      end_row = number_of_rows - 1
   return end_row
   
 def display_data(df):
@@ -156,7 +156,6 @@ def display_data(df):
       yes_no_input = get_yes_no_input("\n\nWould you like to see more rows? Type 'yes' or 'no': ")
       if (yes_no_input == 'YES'):
         start_row = end_row + 1
-
         end_row = set_end_row(start_row, number_of_rows)
       else:
         return
