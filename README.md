@@ -8,9 +8,9 @@ June 9, 2024
 
 This program computes bikeshare statistics, such as the most common travel times and the average trip duration. Data from three cities (Chicago, New York, and Washington) can be used. In addition to viewing bikeshare statuis, the user can view data from individual bike trips.
 
-## Files used
+## Components of the installation
 
-This program uses one Python file (bikeshare.py) and three data files: chicago.csv, new_yorl_city.csv, and washington.csv. The Python file is run using the Python interpreter. While the program runs, one or more of the data files will be accessed, depending on whu
+This program uses one Python file (`bikeshare.py`) and three data files: `chicago.csv`, `new_york_city.csv`, and `washington.csv`. The Python file is run using the Python interpreter. While the program runs, one or more of the data files will be accessed, depending on which city is selected.
 
 ## Installation
 
