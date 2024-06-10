@@ -118,9 +118,9 @@ def get_month_day():
       print(f)
   month = 'all'
   day = 'all'
-  if (month_day_filter == 'MONTH' or month_day_filter == 'BOTH'):
+  if (month_day_filter in ('MONTH', 'BOTH')):
     month = get_month_input()
-  if (month_day_filter == 'DAY' or month_day_filter == 'BOTH'):
+  if (month_day_filter in ('DAY', 'BOTH')):
     day = get_day_of_week_input()
   return month, day
 
@@ -134,8 +134,8 @@ def set_end_row(start_row, number_of_rows):
   """
    
   end_row = start_row + 4
-  if end_row > number_of_rows-1:
-      end_row = number_of_rows-1
+  if end_row > number_of_rows - 1:
+      end_row = number_of_rows - 1
   return end_row
   
 def display_data(df):
@@ -156,7 +156,6 @@ def display_data(df):
       yes_no_input = get_yes_no_input("\n\nWould you like to see more rows? Type 'yes' or 'no': ")
       if (yes_no_input == 'YES'):
         start_row = end_row + 1
-
         end_row = set_end_row(start_row, number_of_rows)
       else:
         return
@@ -241,7 +240,8 @@ def main():
     user_stats(df, city)
 
     # Display individual rows
-    yes_no_input = get_yes_no_input("Would you like to see data for the first 5 rows? Type 'yes' or 'no': ")
+    yes_no_input = get_yes_no_input("Would you like to see data for the first 5 rows \
+                                    (or all rows if there less than 5)? Type 'yes' or 'no': ")
     if (yes_no_input == 'YES'):
       display_data(df)
     restart = get_yes_no_input("\nWould you like to restart? Enter 'yes' or 'no':")
