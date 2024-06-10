@@ -118,9 +118,9 @@ def get_month_day():
       print(f)
   month = 'all'
   day = 'all'
-  if (month_day_filter == 'MONTH' or month_day_filter == 'BOTH'):
+  if (month_day_filter in ('MONTH', 'BOTH')):
     month = get_month_input()
-  if (month_day_filter == 'DAY' or month_day_filter == 'BOTH'):
+  if (month_day_filter in ('DAY', 'BOTH')):
     day = get_day_of_week_input()
   return month, day
 
